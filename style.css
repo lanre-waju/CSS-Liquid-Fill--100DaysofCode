@@ -1,0 +1,58 @@
+:root {
+  --background: #fff;
+  --dark: #333
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
+.box {
+  position: relative;
+  background: var(--dark);
+  border: 0.25rem solid var(--dark);
+  height: 8rem;
+  width: 8rem;
+  outline: 0;
+  overflow: hidden;
+}
+
+.box::before {
+  content: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxANEBENDRAODw4NDw8NDg4ODRANDg4NFhEWFxUVExcZHi4gGBwlHRMVITQhJSkrLi4uFys/ODM4NyktMCsBCgoKDQ0NDw0NDzcZHxktKy0rKystKysrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQUGBwIDBAj/xAA8EAACAQMBBQUFBAkFAQAAAAAAAQIDBBEFEiExQWEGBxMUUSIycYGRI0JSoSQzYnKCkrHB0RVDU8LhCP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDRoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHdaWtSvONKjCdWpN4jTpxc5yfRIDpBmd33Yapb2lS/uKdOjSoQdSUKlVOts55Rjlc+DaMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZo+mVb2vStLeO1WrzVOC5ZfFv0SWW36I+qOwXYa10WgoU4qpczS8e5lFbdSXNR/DFcl9d+81b/856PGpcXV9NZdvCFCk3ylUy5NdcRS/iZu7WtXt7CjO5u6saVGmsuUnxfJRXGTfot4GFd+usRtdJnRzipe1IUILnsqSnN/DEcfxI+ZDK+8btlPW7t12nC3pJ07Wk+MKed8pftS4v5LkYoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkCAcsE7IHEzbsl3XalqkVVjTVtbyw41rjMNuPrCHF/HcupmPcr3dQuFHVr+G1Tz+iUJr2ZtP9bJc1lbl8/Q3sljgBpKj3ArZ+01CW3+zbLZ/ORjfaDuU1K1TnaypXsVyh9jV/lk8P6n0iAPlbs1q2t6M6tpZ0LilUryTlCVjKpU2orCcU49eqMko93Gva5NV9VrulH7vmZ7c4p/gpR9mPw9k+hcIAacpdwdts+3e3Dn6xp04x+jz/Uo9d7iLmlFzsbmncY3+FVh4M38JZab+ODf5IHxZqmmV7OrK3uqU6NaHvQqRw8eq9V1W48h9Kd+NPTZWX6dJRu8Sdg6aUrh1FxWP+PhtZ3cOeD5u2AOsHNxOOAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAASjnGJxiemjDICnRyWei6PK8uKFrHObitTo5XGMZSSlL5LL+RNrbZM77rdPT1S2k17jqzXxVKSX9QN/WVrC3pU6FKKhTowjTpxSwowisJL5I7iSAAAAAAAeXVtQhZ0Kt1VeKdCnKrL1aSzhdXwPUYd3sN/wCmzpxz9rVowlj8Kltf9QPnztLqVfU7mpeXLbnVfsxzmNKkvdhHovzeXzKmVqZU9O6HTVsOgGKzoYPPOBkNzaYKq4pYAr2jidk0cGBAAAAAAAAAAAAAAAAAAAAAAAAABKA5wPfaRPBTLKzAvtPo5wZ93eRVO/t5ernD6wkjCtMXAy7Ra3g1KdVf7c4T+jTA3oQRCaklJb1JJp+qZIAAAAAAKPtpYO5sqsEsyhs1Uv3Xl/lkvA1nc+YGiZWZ5bi0M/7T9nJUJOrRi5UZNtpLLpv/AAYjcxAxK/t8GN31PGTMNSXExTUEBR1UdLPRWPOwIAAAAAAAAAAAAAAAAAAAAAAAAJRAA7KZY2citiz2W88AZVptTgZLZ1zCbO4wXVte45gb67C6mrm1jBvM7f7KXrs/df03fIyI0X2M7VKxuYzm/samKdbpHO6Xye/4ZN5wmpJSi04ySaaeU0+DQEgAAAAAAA41pxjGUp4UYpyk3wSS3mktYvlVq1KkUoxnOUoxSwlHO78jMe9HtPG3pqwpy+1rLarYfuUeSfWX9F1NT1r/AKgNRq8TGL+RZXl1ko7qrkDwVmdDO2ozqYEAAAAAAAAAAAAAAAAAAAAAAAAAACUd0JYOg5JgWFKvg9dO8xzKZTOaqAXivuptXup7xqdNR02/moQzs2tebxGOeFKb5L0fDl6GkPFPdo+n1b2p4VJLHGc5e5Tj6v8AxzA+x0dN7eUreDq16lOjTisyqVZxpwiure407oFStY0VQp3t3KMVhbVXMY9IJ+6uiMf7U9nql/LxXeXFSa3qF1UlWpp/s/g+QG2LjvP0anLZd7GXWnSrVI/zRjh/IutE7T2OobrO6oVpJZcIzSqpdYP2l9D5gq9kr6LwqcJL8Ua0MfnhljpXYuvtRqV6yobLyvBk5VU+kuEX13gfUpi/brtrb6NRbnKM7qon4Fun7U3+KX4YLm/pvMEt7uvTp+Cr6+aSxtSuXKf8z3muO13Z6tRcruNWrcwk81ZVZOpXj1lJ+8uvIDzahrdS5qzr1pudWrJznL1b9PRLhjoeOd6VHjEOqB76tzk8VWpk6nM4uQCTOBJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIyQAO23pSqSjTgsym1FLqbN0S2hZ0lShhvjUnwc582Yd2XoqOa8uPuQ/u/7GRec6gX/m+o82UHnOo851Av/N9R5vqUHm+o851Av/N9SHdJ7nvT3NPmUPnOo851AxftPpatqu1T/U1W3DH3Jc4/4/8AClyZxqaVxSlTeN6zF+klwZg8lhtPinh/EBkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASiDlT4r4gX9vVUIxgvurB2eaKfxx44Fx5oeaKfxx44Fx5oeaKfxx44Fx5oea6lP44dwBZXGpKC9XyRSV6m3JzaScnnCOMpNvL4s4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE5GSABORkgATkZIAE5IAAAAAAAAAAAACxVva7OfHntbO1s+E+OM7Px5Z4ZOyNtaLaTruS3JS2ZRcXiWXs43rOx8myQBKtbPGHXltZll7L3LDxyw96XxzyOSs7NL2q7cpLdhPEXlrfhfD5AAKdjaSagrje5v2mtleHji87lw+Z0q1tWovzDW97ScHlR6buOcbvQACXa2uFiu/vttwln7uysY/e+O71PRS0y1ksu6Uc8E0sterXL4AAf/Z);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  height: 200%;
+  width: 200%;
+  background: var(--background);
+  border-radius: 45%;
+  animation: fill 5s ease-in-out infinite;
+}
+
+@keyframes fill {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg);
+  }
+}
